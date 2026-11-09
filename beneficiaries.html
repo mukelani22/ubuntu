@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beneficiaries | Ubuntu Community Support NPO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo-container">
+            <img src="Images/logo.png"
+                 alt="UBUNTU COMMUNITY SUPPORT NPO Logo"
+                 class="logo-image">
+        
+        <div class="logo-text">
+            <h2>Ubuntu Community</h2>
+            <span>Support NPO</span>
+        </div>
+
+        
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="beneficiaries.html">Beneficiaries</a>
+        </nav>
+
+    </header>
+
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1>
+                Beneficiary Registration
+            </h1>
+
+            <p>
+                Register a beneficiary and provide information
+                about the type of community assistance required.
+            </p>
+
+        </div>
+
+        <div class="hero-image">
+
+            <img src="images/community.jpg"
+                 alt="Community support">
+
+        </div>
+
+    </section>
+
+
+    <section class="welcome">
+
+        <h2>Register a Beneficiary</h2>
+
+        <p>
+            Please complete the form below. All information
+            marked as required must be provided before the
+            registration can be submitted.
+        </p>
+
+    </section>
+
+
+    <section class="registration">
+
+        <form id="beneficiaryForm">
+
+            <div class="form-container">
+
+                <div class="form-section">
+
+                    <h2>Personal Details</h2>
+
+                    <label for="fullName">
+                        Full Name *
+                    </label>
+
+                    <input
+                        type="text"
+                        id="fullName"
+                        name="fullName"
+                        placeholder="Enter full name"
+                        required
+                    >
+
+
+                    <label for="idNumber">
+                        ID Number *
+                    </label>
+
+                    <input
+                        type="text"
+                        id="idNumber"
+                        name="idNumber"
+                        placeholder="Enter 13-digit ID number"
+                        maxlength="13"
+                        required
+                    >
+
+
+                    <label for="age">
+                        Age *
+                    </label>
+
+                    <input
+                        type="number"
+                        id="age"
+                        name="age"
+                        min="1"
+                        max="120"
+                        placeholder="Enter age"
+                        required
+                    >
+
+
+                    <label>
+                        Gender *
+                    </label>
+
+                    <div class="radio-group">
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="gender"
+                                value="Male"
+                                required
+                            >
+                            Male
+                        </label>
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="gender"
+                                value="Female"
+                            >
+                            Female
+                        </label>
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="gender"
+                                value="Other"
+                            >
+                            Other
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-section">
+
+                    <h2>Contact Details</h2>
+
+                    <label for="phone">
+                        Contact Number *
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder="Enter contact number"
+                        required
+                    >
+
+
+                    <label for="email">
+                        Email Address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter email address"
+                    >
+
+
+                    <label for="address">
+                        Residential Address *
+                    </label>
+
+                    <textarea
+                        id="address"
+                        name="address"
+                        rows="4"
+                        placeholder="Enter residential address"
+                        required
+                    ></textarea>
+
+
+                    <label for="area">
+                        Area *
+                    </label>
+
+                    <input
+                        type="text"
+                        id="area"
+                        name="area"
+                        placeholder="Enter area"
+                        required
+                    >
+
+
+                    <label for="postalCode">
+                        Postal Code *
+                    </label>
+
+                    <input
+                        type="text"
+                        id="postalCode"
+                        name="postalCode"
+                        placeholder="Enter postal code"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-section full-width">
+
+                    <h2>Assistance Required</h2>
+
+                    <label for="assistance">
+                        Type of Assistance *
+                    </label>
+
+                    <select
+                        id="assistance"
+                        name="assistance"
+                        required
+                    >
+
+                        <option value="">
+                            Select assistance
+                        </option>
+
+                        <option value="Food Support">
+                            Food Support
+                        </option>
+
+                        <option value="Hygiene Support">
+                            Hygiene Support
+                        </option>
+
+                        <option value="Educational Support">
+                            Educational Support
+                        </option>
+
+                        <option value="Clothing Support">
+                            Clothing Support
+                        </option>
+
+                        <option value="Emergency Support">
+                            Emergency Support
+                        </option>
+
+                    </select>
+
+
+                    <label for="additionalInfo">
+                        Additional Information
+                    </label>
+
+                    <textarea
+                        id="additionalInfo"
+                        name="additionalInfo"
+                        rows="5"
+                        placeholder="Explain any additional assistance required"
+                    ></textarea>
+
+
+                    <div class="consent">
+
+                        <label>
+
+                            <input
+                                type="checkbox"
+                                id="consent"
+                                name="consent"
+                                required
+                            >
+
+                            I confirm that the information provided
+                            is correct. *
+
+                        </label>
+
+                    </div>
+
+
+                    <div class="form-buttons">
+
+                        <button
+                            type="submit"
+                            class="btn"
+                        >
+                            Register Beneficiary
+                        </button>
+
+                        <button
+                            type="reset"
+                            class="btn secondary-btn"
+                        >
+                            Clear Form
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </form>
+
+    </section>
+
+
+    <section class="welcome">
+
+        <h2>Our Assistance Programmes</h2>
+
+        <p>
+            Ubuntu Community Support provides assistance based
+            on the needs identified during the beneficiary
+            registration process.
+        </p>
+
+        <div class="assistance-list">
+
+            <div>
+                <h3>Food Support</h3>
+                <p>
+                    Essential food supplies for individuals
+                    and families in need.
+                </p>
+            </div>
+
+            <div>
+                <h3>Hygiene Support</h3>
+                <p>
+                    Basic hygiene products for beneficiaries
+                    requiring assistance.
+                </p>
+            </div>
+
+            <div>
+                <h3>Educational Support</h3>
+                <p>
+                    Educational resources to assist learners
+                    and community members.
+                </p>
+            </div>
+
+            <div>
+                <h3>Emergency Support</h3>
+                <p>
+                    Assistance for urgent situations affecting
+                    beneficiaries.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+
+        <p>
+            Ubuntu Community Support NPO
+        </p>
+
+        <p>
+            Email: info@ubuntu.org |
+            Phone: 011 456 7890
+        </p>
+
+        <p>
+            © 2026 Ubuntu Community Support NPO.
+            All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
